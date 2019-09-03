@@ -14,7 +14,7 @@
         $(document).ready(function(a, b, c, d){
         $("h1").hide();
         a=decodeURI(window.location.href.substring(46, window.location.href.length)).split("`");
-        b=a[0].replace(/-/, " ");
+        b=a[0].replace(/-/, " ").replace("\"","");
         c=a[2];
         if(c==="en"){d=["Dear ",",","Happy Teacher's Day!","Love,","Bobby Lee","5L"]}else{d=["亲爱的","：","教师节快乐！","","李嘉业","五礼班"]}
         $("h1").text(d[0]+b+d[1]);
