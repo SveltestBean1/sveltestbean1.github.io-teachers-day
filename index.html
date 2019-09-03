@@ -12,7 +12,7 @@
         </div>               
         <script>
         $(document).ready(function(a, b, c){
-        $("h1").hide();a=decodeURI(window.location.href.substring(46, window.location.href.length)).split("`");b=a[0].replace(/-/, " ");console.log(b);})
+        $("h1").hide();a=decodeURI(window.location.href.substring(46, window.location.href.length)).split("`");b=a[0].replace(/-/, " ");$("h1").text("Dear "+b+",");$("h1").slideDown();})
         </script>
     </body>
 </html>
