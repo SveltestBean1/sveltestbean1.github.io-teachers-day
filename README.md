@@ -1,2 +1,2 @@
 # sveltestbean1.github.io-teachers-day
-awdadadawdwadadwadad
+permalink: /index.html
