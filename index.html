@@ -10,10 +10,10 @@
         <div>
             <h1></h1>
             <br>
-            <h2></h2>
-            <h2></h2>
-            <h2></h2>
-            <h2></h2>
+            <h2 id="a"></h2>
+            <h2 id="b"></h2>
+            <h2 id="c"></h2>
+            <h2 id="d"></h2>
         </div>               
         <script>
         $(document).ready(function(a, b, c, d){
@@ -26,12 +26,7 @@
         $("h1").animate({opacity:0.0,paddingLeft:"-=100"},0);
         $("h1").show();
         $("h1").delay(200).animate({opacity:"+=1",paddingLeft:"+=50"},500,"swing");
-        for(c=0;c<d.length-2;c++){
-        $("h2").eq(c).text(d[c+2]);
-        $("h2").eq(c).animate({opacity:0.0,paddingLeft:"-=100"},0);
-        $("h2").eq(c).show();
-        $("h2").eq(c).delay(200).animate({opacity:"+=1",paddingLeft:"+=50"},500,"swing");}
-        });
+        })
         </script>
     </body>
 </html>
