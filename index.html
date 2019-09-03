@@ -11,8 +11,8 @@
             <h1>Dear <span class="name"></span>,</h1>
         </div>               
         <script>
-        $(document).ready(function(a, b){
-        $("h1").hide();a=window.location.href.substring(46, window.location.href.length);b=decodeURI(a);console.log(b)})
+        $(document).ready(function(a, b, c){
+        $("h1").hide();a=decodeURI(window.location.href.substring(46, window.location.href.length)).split(",");console.log(a)})
         </script>
     </body>
 </html>
